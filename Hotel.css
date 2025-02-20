@@ -1,0 +1,396 @@
+.container {
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background: #fff; 
+}
+body {
+    background-color: #f4f4f4; 
+}
+
+.divisoria {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #8b6f47, #d2b48c, #8b6f47);
+    margin: 50px auto;
+    width: 60%;
+    border-radius: 2px;
+}
+
+h1 {
+    text-align: center; 
+    font-family: 'Playfair Display', serif; 
+    font-size: 48px; 
+    font-weight: bold; 
+    color: #2c3e50; 
+    margin-top: 20px; 
+}
+
+nav {
+    position: fixed;  
+    top: 0;          
+    left: 0;
+    width: 100%;      
+    background: rgba(34, 34, 34, 0.9); 
+    padding: 15px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c1a36a; 
+}
+
+.fotoHotel {
+    width: 100%;
+    height: 500px; 
+    background: url("Imagens/hotel.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.frase-impacto {
+    text-align: center;
+    font-size: 26px; 
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #4a3f35;
+    margin-top: 20px;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-style: italic; 
+    position: relative;
+}
+
+#servicos {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f1e9; 
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#servicos h2 {
+    font-size: 32px;
+    color: #a88c5d; 
+    margin-bottom: 30px;
+}
+
+.servicos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.servico {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.servico:hover {
+    transform: scale(1.05);
+}
+
+.servico img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.servico p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5a4833; 
+}
+
+
+#quartos {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f5f0e6; 
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#quartos h2 {
+    font-size: 2em;
+    color: #6b4f4f; 
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.quarto {
+    display: inline-block;
+    width: 320px; 
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    vertical-align: top; 
+}
+
+.quarto:hover {
+    transform: scale(1.05);
+}
+
+.quarto img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.quarto h3 {
+    font-size: 1.5em;
+    color: #4a2c2a; /* Tom vinho escuro */
+    margin-bottom: 10px;
+}
+
+.quarto p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #705d56; 
+    margin-bottom: 15px;
+}
+
+.quarto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quarto ul li {
+    font-size: 1em;
+    color: #3e2b2b; 
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.quarto ul li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .quarto {
+        width: 90%;
+        margin: 15px auto;
+    }
+}
+
+
+#reservas {
+    background-color: #f5f0e6;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#reservas h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #4a3f35;
+    margin-bottom: 20px;
+}
+
+#reservas form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#reservas label {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    color: #4a3f35;
+    text-align: left;
+}
+
+#reservas input, #reservas select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #b59e8a;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+#reservas button {
+    background-color: #8b6f47;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#reservas button:hover {
+    background-color: #715736;
+}
+
+.contato {
+    background-color: #f5f0e6;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contato h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #4a3f35;
+    margin-bottom: 20px;
+}
+
+.info-contato p {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    color: #4a3f35;
+    margin-bottom: 10px;
+}
+
+.info-contato i {
+    color: #8b6f47;
+    margin-right: 10px;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato label {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    color: #4a3f35;
+    text-align: left;
+}
+
+.contato input, .contato textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #b59e8a;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.contato button {
+    background-color: #8b6f47;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contato button:hover {
+    background-color: #715736;
+}
+
+.localizacao {
+    background-color: #f5f0e6;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.localizacao h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #4a3f35;
+    margin-bottom: 15px;
+}
+
+.localizacao p {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    color: #4a3f35;
+    margin-bottom: 20px;
+}
+
+.mapa iframe {
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #4a2c2a;
+    color: #f8f5f0; 
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}

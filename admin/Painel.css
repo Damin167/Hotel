@@ -1,0 +1,204 @@
+.container {
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background: #fff;
+}
+body {
+    background-color: #f4f4f4; 
+}
+
+h1 {
+    text-align: center; 
+    font-family: 'Playfair Display', serif;
+    font-size: 48px; 
+    font-weight: bold; 
+    color: #2c3e50; 
+    margin-top: 20px; 
+}
+
+label{
+	font-size: 25px;
+}
+
+input {
+    font-size: 25px; 
+    padding: 10px; 
+    height: 25px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+}
+#quartos {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f5f0e6; 
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#quartos h2 {
+    font-size: 2em;
+    color: #6b4f4f; 
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.quarto {
+    display: inline-block;
+    width: 320px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    vertical-align: top; 
+	text-align: left;
+}
+
+.quarto img {
+    width: 50%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.quarto h3 {
+    font-size: 1.5em;
+    color: #4a2c2a; 
+    margin-bottom: 10px;
+}
+
+.quarto label {
+    font-size: 18px; 
+    color: #4a2c2a;
+    display: block;
+    margin-top: 10px;
+}
+
+#descricao1,
+#descricao2,
+#descricao3{
+    width: 97%;
+    padding: 12px;
+	font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.quarto input[type="file"]{
+    width: 97%;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#salvar, #entrar{
+    padding: 12px 20px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .quarto {
+        width: 90%;
+        margin: 15px auto;
+    }
+}
+
+.reserva {
+    background-color: #f5f0e6;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reserva h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #4a3f35;
+    margin-bottom: 20px;
+}
+
+.reserva form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.reserva label {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    color: #4a3f35;
+    text-align: left;
+}
+
+.reserva input, .reserva select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #b59e8a;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.reserva button {
+    background-color: #8b6f47;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reserva button:hover {
+    background-color: #715736;
+}
+
+footer {
+    background-color: #4a2c2a; 
+    color: #f8f5f0; 
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}

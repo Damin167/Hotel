@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo</title>
+    <link rel="stylesheet" href="Painel.css">
+</head>
+<body>
+	<header>
+            <h1>Old Hotel</h1>
+			<h1>Gerenciamento do Hotel</h1>
+    </header>
+    <div class="container">
+		<section id="quartos">
+
+			<h2>Editar Quartos</h2>
+				<div class="quarto">
+					<h3>Suíte Clássica</h3>
+					<label>Imagem:</label>
+					<input type="file" id="img1">
+					<label>Descrição:</label>
+					<textarea id="descricao1"></textarea>
+					<label>Preço:</label>
+					<input type="number" id="preco1">
+				</div>
+
+				<div class="quarto">
+					<h3>Suíte Real</h3>
+					<label>Imagem:</label>
+					<input type="file" id="img2">					
+					<label>Descrição:</label>
+					<textarea id="descricao2"></textarea>
+					<label>Preço:</label>
+					<input type="number" id="preco2">
+				</div>
+
+				<div class="quarto">
+					<h3>Suíte Majestosa</h3>
+					<label>Imagem:</label>
+					<input type="file" id="img3">					
+					<label>Descrição:</label>
+					<textarea id="descricao3"></textarea>
+					<label>Preço:</label>
+					<input type="number" id="preco3">
+				</div>
+				<div>
+					<button id="salvar">Salvar Alterações</button>
+				</div>
+		</section>
+
+        <section id="reservasFeitas">
+			<h1>Reservas Feitas</h1>
+			<div id="listaReservas"></div>
+		</section>
+    </div>
+    <script src="Painel.js"></script>
+</body>
+</html>
